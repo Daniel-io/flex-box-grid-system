@@ -15,13 +15,332 @@
   <!-- Favicons -->
 
   <!-- Critical Path -->
-  <style media="screen"></style>  
+  <style media="screen">
+
+    h2 {
+      color: #001A33;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 4px;
+      background-color: currentColor;
+      margin: 10px 0;
+    }
+
+    .item{
+      background-color: #007FFF;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    @media (max-width: 767px) {
+      .item{
+        padding: .4rem;
+      }
+    }
+
+    .item--nested {
+      background-color: #036;
+      padding: 1rem;
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 767px) {
+      .item--nested {
+        padding: .4rem;
+      }
+    }
+
+    .item--large {
+      height: 6rem;
+    }
+
+    .item--text {
+      color: white;
+      text-align: center;
+      background-color: #06C;
+    }
+
+  </style>  
 </head>
 <body>
 
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
+
+
+  <div class="o-box u-bg-tint">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Responsive</h2>
+  
+      <div class="o-layout">
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-3/5@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+      </div>
+      <div class="o-layout">
+        <div class="o-layout__item u-1/4@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-1/4@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-2/4@sm "><div class="item"></div></div>
+      </div>
+      <div class="o-layout">
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+        <div class="o-layout__item u-1/5@sm "><div class="item"></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="o-box">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Full width by default</h2>
+      <div class="o-layout">
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="o-box u-bg-tint">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Offset</h2>
+      <div class="o-layout u-mb--xl">
+        <div class="o-layout__item u-1/5@sm u-push-4/5"><div class="item"></div></div>
+        <div class="o-layout__item u-2/5@sm u-push-3/5"><div class="item"></div></div>
+        <div class="o-layout__item u-3/5@sm u-push-2/5"><div class="item"></div></div>
+        <div class="o-layout__item u-4/5@sm u-push-1/5"><div class="item"></div></div>
+      </div>
+      <div class="o-layout">
+        <div class="o-layout__item u-1/5@sm u-pull-4/5"><div class="item"></div></div>
+        <div class="o-layout__item u-2/5@sm u-pull-3/5"><div class="item"></div></div>
+        <div class="o-layout__item u-3/5@sm u-pull-2/5"><div class="item"></div></div>
+        <div class="o-layout__item u-4/5@sm u-pull-1/5"><div class="item"></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="o-box">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Auto width</h2>
+      <div class="o-layout o-layout--auto">
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+      </div>
+      <div class="o-layout o-layout--auto">
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="o-box u-bg-tint">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Nested grids</h2>
+      <div class="o-layout">
+        <div class="o-layout__item u-1/2@sm">
+          <div class="item">
+
+            <div class="o-layout">
+              <div class="o-layout__item u-1/3"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-2/3"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="o-layout__item u-1/2@sm">
+          <div class="item">
+
+            <div class="o-layout">
+              <div class="o-layout__item u-1/3@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/3@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/3@sm"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="o-box">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Alignment: horizontal</h2>
+      <div class="o-layout">
+        <div class="o-layout__item">
+          <div class="item">
+
+            <div class="o-layout u-start@xs">
+              <div class="o-layout__item u-1/3"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+          <div class="item">
+
+            <div class="o-layout u-center@xs">
+              <div class="o-layout__item u-1/3"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+          <div class="item">
+
+            <div class="o-layout u-end@xs">
+              <div class="o-layout__item u-1/3"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="o-box u-bg-tint">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Alignment: vertical</h2>
+      <div class="o-layout o-layout--auto u-top">
+        <div class="o-layout__item"><div class="item item--large"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+      </div>
+      <div class="o-layout o-layout--auto u-middle">
+        <div class="o-layout__item"><div class="item item--large"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+      </div>
+      <div class="o-layout o-layout--auto u-bottom">
+        <div class="o-layout__item"><div class="item item--large"></div></div>
+        <div class="o-layout__item"><div class="item"></div></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="o-box">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Distribution</h2>
+      <div class="o-layout">
+        <div class="o-layout__item">
+          <div class="item">
+
+            <div class="o-layout u-between">
+              <div class="o-layout__item u-1/5@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/5@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/5@sm"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+          <div class="item">
+
+            <div class="o-layout u-around">
+              <div class="o-layout__item u-1/4@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/4@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/4@sm"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+          <div class="item">
+
+            <div class="o-layout u-center">
+              <div class="o-layout__item u-1/3 u-1/5@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/3 u-1/5@sm"><div class="item--nested"></div></div>
+              <div class="o-layout__item u-1/3 u-1/5@sm"><div class="item--nested"></div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="o-box">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Reordering</h2>
+      <div class="o-layout">
+        <div class="o-layout__item">
+          <div class="item">
+
+            <div class="o-layout u-between">
+              <div class="o-layout__item u-1/5 u-last"><div class="item--nested item--text">1</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">2</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">3</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">4</div></div>
+              <div class="o-layout__item u-1/5 u-first"><div class="item--nested item--text">5</div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="o-box">
+    <div class="o-wrapper">
+      <h2 class="u-mb">Reversing</h2>
+      <div class="o-layout">
+        <div class="o-layout__item">
+          <div class="item">
+
+            <div class="o-layout u-row-reverse">
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">1</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">2</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">3</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">4</div></div>
+              <div class="o-layout__item u-1/5"><div class="item--nested item--text">5</div></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
