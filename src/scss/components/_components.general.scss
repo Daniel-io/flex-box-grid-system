@@ -1,0 +1,64 @@
+/* ==========================================================================
+   #GENERAL
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-size: 14px;
+}
+
+h2 {
+  color: #001A33;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: currentColor;
+  margin: 10px 0;
+}
+
+.item{
+  background-color: #007FFF;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 767px) {
+  .item{
+    padding: .8rem;
+  }
+}
+
+.item--nested {
+  background-color: #036;
+  padding: 1rem;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 767px) {
+  .item--nested {
+    padding: .8rem;
+  }
+}
+
+.item--large {
+  height: 6rem;
+}
+
+.item--text {
+  color: white;
+  text-align: center;
+  background-color: #06C;
+}

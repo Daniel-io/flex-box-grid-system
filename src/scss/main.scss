@@ -57,6 +57,7 @@
 * COMPONENTS
 * Avatar...............Avatar image.
 * Buttons..............Button styles.
+* General..............General visualization styles.
 * List-group...........List-group UI.
 * Modal................Modal structure.
 *
@@ -127,6 +128,7 @@
 
 @import "components/components.avatar";
 @import "components/components.buttons";
+@import "components/components.general";
 @import "components/components.list-group";
 @import "components/components.modal";
 
