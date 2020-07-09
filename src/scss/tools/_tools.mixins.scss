@@ -1,0 +1,81 @@
+/* ==========================================================================
+  #MIXINS
+  ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/* Centering
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+@mixin margin-auto-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* Hover
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+@mixin hover($canhover) {
+
+  @if ($canhover == false) {
+    @media only screen and (hover: none) { @content };
+
+  } @else if ($canhover == true) {
+    @media only screen and (hover: hover) { @content };
+
+  }
+}
+
+
+
+
+
+
+
+
+

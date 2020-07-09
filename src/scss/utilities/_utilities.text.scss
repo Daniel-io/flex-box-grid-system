@@ -1,0 +1,142 @@
+/* ==========================================================================
+   #TEXT
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+/* Alignment
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-justify {
+  text-align: justify !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Transformation
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.u-text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.u-text-capitalize {
+  text-transform: capitalize !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Weight
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+.u-text-bold {
+  font-weight: bold;
+}
+
+.u-text-light {
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+/* Colors
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+.u-text-primary {
+  color: $color-primary !important;
+}
+
+.u-text-secondary {
+  color: $color-secondary !important;
+}
+
+.u-text-tertiary {
+  color: $color-tertiary !important;
+}
+
+.u-text-success {
+  color: $color-success !important;
+}
+
+.u-text-error {
+  color: $color-error !important;
+}
